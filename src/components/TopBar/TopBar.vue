@@ -222,7 +222,7 @@ const momentsTransformer = setupTopBarItemTransformer('moments')
 const favoritesTransformer = setupTopBarItemTransformer('favorites')
 const historyTransformer = setupTopBarItemTransformer('history')
 const watchLaterTransformer = setupTopBarItemTransformer('watchLater')
-const uploadTransformer = setupTopBarItemTransformer('upload')
+// const uploadTransformer = setupTopBarItemTransformer('upload')
 const moreTransformer = setupTopBarItemTransformer('more')
 
 function setupTopBarItemTransformer(key: keyof typeof popupVisible) {
@@ -752,7 +752,7 @@ defineExpose({
                 </div>
 
                 <!-- Creative center -->
-                <div class="right-side-item">
+                <!-- <div class="right-side-item">
                   <a
                     :class="{ 'white-icon': forceWhiteIcon }"
                     href="https://member.bilibili.com/platform/home"
@@ -761,7 +761,7 @@ defineExpose({
                   >
                     <div i-mingcute:bulb-line />
                   </a>
-                </div>
+                </div> -->
               </div>
 
               <!-- More -->
@@ -797,7 +797,7 @@ defineExpose({
                 />
 
                 <!-- Upload -->
-                <div
+                <!-- <div
                   ref="upload"
                   class="right-side-item"
                   :class="{ active: popupVisible.upload }"
@@ -822,7 +822,7 @@ defineExpose({
                       @click.stop="() => {}"
                     />
                   </Transition>
-                </div>
+                </div> -->
 
                 <!-- Notifications -->
                 <div

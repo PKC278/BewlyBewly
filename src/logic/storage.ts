@@ -157,7 +157,7 @@ export const originalSettings: Settings = {
   dockItemsConfig: [],
   disableDockGlowingEffect: false,
   disableLightDarkModeSwitcherOnDock: true,
-  backToTopAndRefreshButtonsAreSeparated: true,
+  backToTopAndRefreshButtonsAreSeparated: false,
 
   sidebarPosition: 'right',
   autoHideSidebar: false,
