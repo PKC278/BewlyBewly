@@ -117,9 +117,9 @@ export const originalSettings: Settings = {
   enableHorizontalScrolling: false,
 
   language: '',
-  customizeFont: 'recommend',
+  customizeFont: 'default',
   fontFamily: '',
-  overrideDanmakuFont: true,
+  overrideDanmakuFont: false,
   removeTheIndentFromChinesePunctuation: false,
 
   disableFrostedGlass: true,
@@ -132,8 +132,8 @@ export const originalSettings: Settings = {
   searchBarLinkOpenMode: 'currentTabIfNotHomepage',
   closeDrawerWithoutPressingEscAgain: false,
 
-  blockAds: false,
-  blockTopSearchPageAds: false,
+  blockAds: true,
+  blockTopSearchPageAds: true,
 
   enableVideoPreview: true,
   enableVideoCtrlBarOnVideoCard: false,
@@ -141,7 +141,7 @@ export const originalSettings: Settings = {
 
   // Desktop & Dock
   useOldTopBar: false,
-  autoHideTopBar: false,
+  autoHideTopBar: true,
   showTopBarThemeColorGradient: true,
   showBewlyOrBiliTopBarSwitcher: true,
   showBewlyOrBiliPageSwitcher: true,
@@ -156,7 +156,7 @@ export const originalSettings: Settings = {
   dockItemVisibilityList: [],
   dockItemsConfig: [],
   disableDockGlowingEffect: false,
-  disableLightDarkModeSwitcherOnDock: false,
+  disableLightDarkModeSwitcherOnDock: true,
   backToTopAndRefreshButtonsAreSeparated: true,
 
   sidebarPosition: 'right',

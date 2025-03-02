@@ -366,12 +366,14 @@ const dockTransformStyle = computed((): { transform: string, transformOrigin: st
                 <Icon
                   v-if="key === 1"
                   icon="line-md:rotate-270"
-                  shrink-0 rotate-90 absolute text-2xl
+                  class="button-icon button-icon-rotate"
+                  shrink-0 text-2xl
                 />
                 <Icon
                   v-else
                   icon="line-md:arrow-small-up"
-                  shrink-0 absolute text-2xl
+                  class="button-icon"
+                  shrink-0 text-2xl
                 />
               </button>
             </Transition>
@@ -389,12 +391,14 @@ const dockTransformStyle = computed((): { transform: string, transformOrigin: st
               <Icon
                 v-if="reachTop"
                 icon="line-md:rotate-270"
-                shrink-0 rotate-90 absolute text-2xl
+                class="button-icon button-icon-rotate"
+                shrink-0 text-2xl
               />
               <Icon
                 v-else
                 icon="line-md:arrow-small-up"
-                shrink-0 absolute text-2xl
+                class="button-icon"
+                shrink-0 text-2xl
               />
             </Transition>
           </button>
@@ -488,7 +492,7 @@ const dockTransformStyle = computed((): { transform: string, transformOrigin: st
   .back-to-top-or-refresh-btn {
     --uno: "transform active:important-scale-90 hover:scale-110";
     --uno: "lg:w-45px w-35px lg:h-45px h-35px";
-    --uno: "grid place-items-center";
+    --uno: "relative flex items-center justify-center";
     --uno: "filter-$bew-filter-glass-1";
     --uno: "bg-$bew-elevated hover:bg-$bew-content-hover";
     --uno: "rounded-full shadow-$bew-shadow-2 border-1 border-$bew-border-color";
@@ -501,6 +505,17 @@ const dockTransformStyle = computed((): { transform: string, transformOrigin: st
       box-shadow 300ms ease,
       opacity 600ms ease;
     box-shadow: var(--bew-shadow-edge-glow-1), var(--bew-shadow-2);
+
+    .button-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .button-icon-rotate {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
 
     &.active {
       --uno: "important-bg-$bew-theme-color-auto text-$bew-text-auto";
