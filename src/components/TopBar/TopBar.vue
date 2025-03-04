@@ -15,15 +15,15 @@ import { createTransformer } from '~/utils/transformer'
 
 import BewlyOrBiliPageSwitcher from './components/BewlyOrBiliPageSwitcher.vue'
 import ChannelsPop from './components/ChannelsPop.vue'
-import FavoritesPop from './components/FavoritesPop.vue'
-import HistoryPop from './components/HistoryPop.vue'
+// import FavoritesPop from './components/FavoritesPop.vue'
+// import HistoryPop from './components/HistoryPop.vue'
 import MomentsPop from './components/MomentsPop.vue'
 import MorePop from './components/MorePop.vue'
 import NotificationsDrawer from './components/NotificationsDrawer.vue'
 import NotificationsPop from './components/NotificationsPop.vue'
-import UploadPop from './components/UploadPop.vue'
+// import UploadPop from './components/UploadPop.vue'
 import UserPanelPop from './components/UserPanelPop.vue'
-import WatchLaterPop from './components/WatchLaterPop.vue'
+// import WatchLaterPop from './components/WatchLaterPop.vue'
 import { updateInterval } from './notify'
 import type { UnReadDm, UnReadMessage, UserInfo } from './types'
 
@@ -220,8 +220,8 @@ const avatarTransformer = setupTopBarItemTransformer('userPanel')
 const notificationsTransformer = setupTopBarItemTransformer('notifications')
 const momentsTransformer = setupTopBarItemTransformer('moments')
 const favoritesTransformer = setupTopBarItemTransformer('favorites')
-const historyTransformer = setupTopBarItemTransformer('history')
-const watchLaterTransformer = setupTopBarItemTransformer('watchLater')
+// const historyTransformer = setupTopBarItemTransformer('history')
+// const watchLaterTransformer = setupTopBarItemTransformer('watchLater')
 // const uploadTransformer = setupTopBarItemTransformer('upload')
 const moreTransformer = setupTopBarItemTransformer('more')
 
@@ -672,7 +672,7 @@ defineExpose({
                 </div>
 
                 <!-- Favorites -->
-                <div
+                <!-- <div
                   ref="favorites"
                   class="right-side-item"
                   :class="{ active: popupVisible.favorites }"
@@ -697,10 +697,10 @@ defineExpose({
                       />
                     </KeepAlive>
                   </Transition>
-                </div>
+                </div> -->
 
                 <!-- History -->
-                <div
+                <!-- <div
                   ref="history"
                   class="right-side-item"
                   :class="{ active: popupVisible.history }"
@@ -723,10 +723,10 @@ defineExpose({
                       @click.stop="() => {}"
                     />
                   </Transition>
-                </div>
+                </div> -->
 
                 <!-- Watch later -->
-                <div
+                <!-- <div
                   ref="watchLater"
                   class="right-side-item"
                   :class="{ active: popupVisible.watchLater }"
@@ -749,7 +749,7 @@ defineExpose({
                       @click.stop="() => {}"
                     />
                   </Transition>
-                </div>
+                </div> -->
 
                 <!-- Creative center -->
                 <!-- <div class="right-side-item">

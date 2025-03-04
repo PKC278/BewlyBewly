@@ -33,16 +33,16 @@ export const useMainStore = defineStore('main', () => {
         url: 'https://www.bilibili.com',
         hasBewlyPage: true,
       },
-      {
-        i18nKey: 'dock.search',
-        icon: 'i-mingcute:search-2-line',
-        iconActivated: 'i-mingcute:search-2-fill',
-        page: AppPage.Search,
-        openInNewTab: false,
-        useOriginalBiliPage: false,
-        url: 'https://search.bilibili.com/all',
-        hasBewlyPage: true,
-      },
+      // {
+      //   i18nKey: 'dock.search',
+      //   icon: 'i-mingcute:search-2-line',
+      //   iconActivated: 'i-mingcute:search-2-fill',
+      //   page: AppPage.Search,
+      //   openInNewTab: false,
+      //   useOriginalBiliPage: false,
+      //   url: 'https://search.bilibili.com/all',
+      //   hasBewlyPage: true,
+      // },
       {
         i18nKey: 'dock.anime',
         icon: 'i-mingcute:tv-2-line',
@@ -83,16 +83,16 @@ export const useMainStore = defineStore('main', () => {
         url: `https://www.bilibili.com/watchlater/list`,
         hasBewlyPage: true,
       },
-      {
-        i18nKey: 'dock.moments',
-        icon: 'i-tabler:windmill',
-        iconActivated: 'i-tabler:windmill-filled',
-        page: AppPage.Moments,
-        openInNewTab: false,
-        useOriginalBiliPage: true,
-        url: `https://t.bilibili.com`,
-        hasBewlyPage: false,
-      },
+      // {
+      //   i18nKey: 'dock.moments',
+      //   icon: 'i-tabler:windmill',
+      //   iconActivated: 'i-tabler:windmill-filled',
+      //   page: AppPage.Moments,
+      //   openInNewTab: false,
+      //   useOriginalBiliPage: true,
+      //   url: `https://t.bilibili.com`,
+      //   hasBewlyPage: false,
+      // },
     ]
   })
 
