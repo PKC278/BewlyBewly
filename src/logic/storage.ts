@@ -143,7 +143,7 @@ export const originalSettings: Settings = {
   useOldTopBar: false,
   autoHideTopBar: true,
   showTopBarThemeColorGradient: true,
-  showBewlyOrBiliTopBarSwitcher: true,
+  showBewlyOrBiliTopBarSwitcher: false,
   showBewlyOrBiliPageSwitcher: true,
   topBarIconBadges: 'number',
   openNotificationsPageAsDrawer: true,
@@ -160,7 +160,7 @@ export const originalSettings: Settings = {
   backToTopAndRefreshButtonsAreSeparated: false,
 
   sidebarPosition: 'right',
-  autoHideSidebar: false,
+  autoHideSidebar: true,
 
   theme: 'auto',
   themeColor: '#00a1d6',
